@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@800;900&display=swap");
 
 * {
   margin: 0;
@@ -13,7 +13,7 @@
   --cor4: #1a5c37;
   --cor5: #063d1e;
   --fonte-destaque: "Bebas Neue", cursive;
-  --fonte-android: "Android", sans-serif;
+  --fonte-android: "Montserrat", sans-serif;
   --fonte-padrao: Arial, Helvetica, sans-serif;
 }
 
@@ -78,8 +78,61 @@ nav a:hover {
 }
 
 main {
-  min-width: 400px;
-  max-width: 800px;
+  min-width: 300px;
+  max-width: 1000px;
   background-color: white;
   margin: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px;
+}
+
+main h1 {
+  font-family: var(--fonte-android);
+  padding-bottom: 15px;
+  font-size: 29px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--cor5);
+  text-align: left;
+}
+
+main p {
+  line-height: 2.1rem;
+  font-size: 16px;
+  text-indent: 30px;
+  padding-bottom: 15px;
+}
+
+main strong {
+  color: var(--cor4);
+  font-weight: bold;
+}
+
+main h2 {
+  background: linear-gradient(
+    90deg,
+    rgba(197, 235, 214, 1) 35%,
+    rgba(253, 255, 254, 1) 92%
+  );
+  font-family: var(--fonte-android);
+  color: var(--cor4);
+  margin-bottom: 15px;
+  padding-left: 10px;
+  text-transform: lowercase;
+  font-size: 24px;
+}
+
+main a {
+  background-color: var(--cor0);
+  color: var(--cor5);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 4px;
+  transition-duration: 0.3s;
+}
+
+main a:hover {
+  text-decoration: underline;
+  color: var(--cor4);
 }
