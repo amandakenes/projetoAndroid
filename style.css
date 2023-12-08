@@ -84,7 +84,6 @@ main {
   margin: auto;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding-bottom: 15px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
 }
 
@@ -130,7 +129,7 @@ main h2 {
 }
 
 main a {
-  background-color: var(--cor0);
+  background-color: #83e1ad;
   color: var(--cor5);
   text-decoration: none;
   font-weight: bold;
@@ -176,11 +175,11 @@ main legend {
 }
 
 aside {
-  width: 99%;
-  background-color: var(--cor1);
+  width: 100%;
+  background-color: #83e1ad;
   margin: auto;
   margin-top: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 23px;
   padding-bottom: 30px;
   border-radius: 8px;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.275);
@@ -209,11 +208,6 @@ aside p {
   padding: 0px 10px;
 }
 
-/*paragráfo antes do rodapé*/
-#before-footer {
-  margin-left: 22px;
-}
-
 footer {
   margin-top: 30px;
   background-color: var(--cor5);
@@ -227,7 +221,12 @@ footer p {
 }
 
 footer a {
-  font-weight: bold;
+  font-weight: bolder;
   color: white;
   text-decoration: none;
+}
+
+footer a:hover {
+  color: #83e1ad;
+  text-decoration: underline;
 }
